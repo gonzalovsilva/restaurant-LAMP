@@ -6,17 +6,17 @@ https://github.com/gonzalovsilva/BXL-Swartz-4-27/blob/master/2.The-Hill/2.PHP/Re
 
 == Todo list
 
-Contact form
+*Contact form*
 
 - [ ] get msgs from contact form to database
 
-Admin page
+*Admin page*
 
 - [ ] create an admin page
 - [ ] get msgs from db
 - [ ] view and delete msgs
 
-Guest book
+*Guest book*
 
 - [ ] Create a guest book page (https://developers.google.com/sheets/api/quickstart/php[use google sheet API])
 - [ ] add a form
@@ -29,7 +29,7 @@ Guest book
 
 - [ ] manage the guest book from admin page
 
-Gallery
+*Gallery*
 
 - [ ] Create a page to upload photos
 - [ ] php script to display the gallery
