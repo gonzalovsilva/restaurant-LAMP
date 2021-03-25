@@ -8,7 +8,7 @@ https://github.com/gonzalovsilva/BXL-Swartz-4-27/blob/master/2.The-Hill/2.PHP/Re
 
 *Contact form*
 
-- [ ] get msgs from contact form to database
+- [X] get msgs from contact form to database
 
 *Admin page*
 

@@ -195,9 +195,13 @@ h2 {
   max-height: 200px;
 }
 
+.bg-success{
+  background-color: #84db6a !important;
+  color: black !important;
+}
+
 @media (min-width: 767px) {
   #contact-ph {
     max-height: 550px;
   }
 }
-/*# sourceMappingURL=style.css.map */

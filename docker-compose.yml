@@ -43,13 +43,13 @@ services:
     networks:
       - becode
   
-  # python:
-  #   image: php:7.2
-  #   container_name: php-vscode
-  #   restart: always #this option will keep your container always running, auto start after turn on your host machine
-  #   stdin_open: true
-  #   networks:
-  #     - becode
+  python:
+    image: php:7.2
+    container_name: php-vscode
+    restart: always #this option will keep your container always running, auto start after turn on your host machine
+    stdin_open: true
+    networks:
+      - becode
 
 networks:
   becode:
