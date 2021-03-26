@@ -1,6 +1,8 @@
-<?php define('getaccess', TRUE); ?>
-
-<?php include 'header.php'; ?>
+<?php 
+session_start();
+define('getaccess', TRUE);
+include 'header.php';
+?>
     <!-- begin carousel section -->
     <div class="container-fluid bg-black">
         <div class="row justify-content-center">

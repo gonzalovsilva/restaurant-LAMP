@@ -1,6 +1,8 @@
-<?php define('getaccess', TRUE); ?>
-
-<?php include 'header.php'; ?>
+<?php 
+session_start();
+define('getaccess', TRUE);
+include 'header.php';
+?>
 <!-- begin main title -->
 <main class="container spacer-main">
     <div class="row py-4">

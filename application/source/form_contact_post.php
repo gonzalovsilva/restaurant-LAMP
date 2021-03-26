@@ -1,8 +1,8 @@
 <?php
 session_start();
+define('getaccess', TRUE);
 if (isset($_SESSION['isValid'])) {
     // first_name, last_name, mail, rest_loc, msg_subject, msg // What we need to test
-
     if (isset($_POST['first_name'])
         and isset($_POST['last_name'])
         and isset($_POST['mail'])
@@ -24,13 +24,11 @@ if (isset($_SESSION['isValid'])) {
         if ($_POST['msg'] == ''){
             $_SESSION['isValid'][3] = 0;
         }
-
         $curSession = [1, 1, 1, 1, false];
-        // var_dump($curSession);
 
         if ($_SESSION['isValid'] === $curSession){
             
-            $bdd = new PDO('mysql:host=database;dbname=mydb', 'root', 'root');
+            include 'config.php'; // Adds PDO Config file
             $requete = $bdd->prepare('INSERT INTO contact(first_name, last_name, mail, rest_loc, msg_subject, msg) 
                 VALUES (:first_name, :last_name, :mail, :rest_loc, :msg_subject, :msg)');
 
@@ -44,9 +42,7 @@ if (isset($_SESSION['isValid'])) {
             ));
 
             $_SESSION['isValid'][4] = true; //data added to database
-
             // print_r($_SESSION['isValid']);
-            
         }
     }
 }

@@ -1,8 +1,3 @@
-// var myDropdown = document.getElementById('dropdownLocation')
-// myDropdown.addEventListener('show.bs.dropdown', function () {
-//     // console.log("hello!");
-
-// })
 var b_location1 = document.getElementById('loc1');
 var b_location2 = document.getElementById('loc2');
 var b_location3 = document.getElementById('loc3');

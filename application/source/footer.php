@@ -1,6 +1,4 @@
-<?php
-if (!defined('getaccess')) die('Direct access not permitted');
-?>
+<?php include 'access.php';?>
 <!-- end main title -->
     <!-- begin footer -->
     <div class="spacer"></div>
@@ -16,7 +14,6 @@ if (!defined('getaccess')) die('Direct access not permitted');
     <!-- end Bootstrap 5 script -->
     <?php 
     if($curPage == 'restaurants.php') echo '<script src="js/actions_resto.js"></script>';
-    
     ?>
 </body>
 

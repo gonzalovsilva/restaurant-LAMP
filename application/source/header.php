@@ -1,5 +1,5 @@
 <?php
-if (!defined('getaccess')) die('Direct access not permitted');
+include 'access.php';
 $curPage = basename($_SERVER['PHP_SELF']); /* Returns The Current PHP File Name */
 
 switch ($curPage) {
