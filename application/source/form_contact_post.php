@@ -11,14 +11,14 @@ if (isset($_SESSION['isValid'])) {
         and isset($_POST['msg'])
     )
     {   
-        $pattern = "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,})$/i";
-        if ($_POST['first_name'] == ''){
+        $mail_pattern = "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,})$/i";
+        if (($_POST['first_name'] == '') OR (strlen($_POST['first_name']) > 20)){
             $_SESSION['isValid'][0] = 0;
         }
-        if ($_POST['last_name'] == ''){
+        if (($_POST['last_name'] == '') OR (strlen($_POST['last_name']) > 20)){
             $_SESSION['isValid'][1] = 0;
         }
-        if (!preg_match($pattern,$_POST['mail'])){
+        if ((!preg_match($mail_pattern,$_POST['mail'])) OR (strlen($_POST['mail']) > 30)){
             $_SESSION['isValid'][2] = 0;
         }
         if ($_POST['msg'] == ''){

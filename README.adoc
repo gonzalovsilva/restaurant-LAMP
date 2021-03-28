@@ -12,14 +12,14 @@ https://github.com/gonzalovsilva/BXL-Swartz-4-27/blob/master/2.The-Hill/2.PHP/Re
 
 *Admin page*
 
-- [ ] create an admin page
-- [ ] get msgs from db
-- [ ] view and delete msgs
+- [X] create an admin page
+- [X] get msgs from db
+- [X] view and delete msgs
 
 *Guest book*
 
-- [ ] Create a guest book page (https://developers.google.com/sheets/api/quickstart/php[use google sheet API])
-- [ ] add a form
+- [X] Create a guest book page (https://developers.google.com/sheets/api/quickstart/php[use google sheet API])
+- [X] add a form
 
 ** containing :
 * customer name
@@ -27,13 +27,13 @@ https://github.com/gonzalovsilva/BXL-Swartz-4-27/blob/master/2.The-Hill/2.PHP/Re
 * visit date
 * comment (optional input)
 
-- [ ] manage the guest book from admin page
+- [X] manage the guest book from admin page
 
 *Gallery*
 
-- [ ] Create a page to upload photos
-- [ ] php script to display the gallery
-- [ ] manage gallery from admin page
+- [X] Create a page to upload photos
+- [X] php script to display the gallery
+- [X] manage gallery from admin page
 - [ ] ##publish## to some free hosting service
 
 == Setup

@@ -18,6 +18,9 @@ switch ($curPage) {
     case 'contact.php':
         $titleMsg = "- Contact Us";
         break;
+    case 'admin.php':
+        $titleMsg = "- Admin";
+        break;
 }
 ?>
 <!DOCTYPE html>
@@ -45,20 +48,25 @@ switch ($curPage) {
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <ul class="navbar-nav text-end">
+                        <?php if (isset($_SESSION['user'])) { ?>
+                            <li class="nav-item">
+                                <a class=<?php echo $curPage == "admin.php" ? "'nav-link active'" . "aria-current='page' href='#' " : "'nav-link'" . "href='admin.php' " ?>>Admin</a>
+                            </li>
+                        <?php } ?>
                         <li class="nav-item">
-                            <a class="nav-link <?php echo $curPage == "index.php" ? "active" . '"' . "aria-current='page' href='#' "  : '"' . " href='index.php' "; ?> >Welcome</a>
+                            <a class=<?php echo $curPage == "index.php" ? "'nav-link active'" . "aria-current='page' href='#' " : "'nav-link'" . "href='index.php' " ?>>Welcome</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?php echo $curPage == "menu.php" ? "active" . '"' . "aria-current='page' href='#' "  : '"' . " href='menu.php' "; ?> >Menu</a>
+                            <a class=<?php echo $curPage == "menu.php" ? "'nav-link active'" . "aria-current='page' href='#' " : "'nav-link'" . "href='menu.php' " ?>>Menu</a>
                         </li>
                         <li class=" nav-item">
-                            <a class="nav-link <?php echo $curPage == "pictures.php" ? "active" . '"' . "aria-current='page' href='#' "  : '"' . " href='pictures.php' "; ?> >Pictures</a>
+                            <a class=<?php echo $curPage == "pictures.php" ? "'nav-link active'" . "aria-current='page' href='#' " : "'nav-link'" . "href='pictures.php' " ?>>Pictures</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?php echo $curPage == "restaurants.php" ? "active" . '"' . "aria-current='page' href='#' "  : '"' . " href='restaurants.php' "; ?> >Restaurants</a>
+                            <a class=<?php echo $curPage == "restaurants.php" ? "'nav-link active'" . "aria-current='page' href='#' " : "'nav-link'" . "href='restaurants.php' " ?>>Restaurants</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?php echo $curPage == "contact.php" ? "active" . '"' . "aria-current='page' href='#' "  : '"' . " href='contact.php' "; ?> >Contact</a>
+                            <a class=<?php echo $curPage == "contact.php" ? "'nav-link active'" . "aria-current='page' href='#' " : "'nav-link'" . "href='contact.php' " ?>>Contact</a>
                         </li>
                     </ul>
                 </div>
